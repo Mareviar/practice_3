@@ -1,0 +1,95 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+  
+.stroke {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+  
+h1 {
+    color: black;
+    font-family: Segoe UI;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+  
+input[type="text"] {
+    width: 650px;
+    height: 45px;
+    padding: 0 21px; 
+    background: gray;
+    border-radius: 20px;
+    border: none;
+    font-family: Segoe UI;
+    font-size: 30px;
+    color: black;
+    outline: none;
+    margin-bottom: 30px;
+}
+  
+.Create {
+    width: 240px;
+    height: 50px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    font-family: Segoe UI;
+    font-size: 30px;
+    border: none;
+    margin-bottom: 30px;
+}
+  
+.Create:hover {
+    background: gray;
+    transition: background-color 0.3s;
+}
+  
+h2 {
+    color: black;
+    font-family: Segoe UI;
+    font-size: 36px;
+    font-weight: bold; 
+    margin-bottom: 20px; 
+}
+  
+.Input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.Link {
+    background: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 45px;
+    border: none;
+    color: gray;
+    font-family: Segoe UI;
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.Link:hover{
+    background: white;
+    transition: background-color 0.3s;
+}
+
+  

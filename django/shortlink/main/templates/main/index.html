@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
+    <script src="{% static 'main/script.js' %}"></script>
+    <title>Short links</title> 
+</head>
+<body>
+    <div class="stroke">
+        <h1>Введите ссылку</h1>
+        <form method="post" action="{% url 'create_link' %}">
+            {% csrf_token %}
+            <input type="text" class="befor_link" id="linkInput">
+            <button class="Create" id="Create" onclick="create_link()">Сократить</button>
+            <h2>Сокращенная ссылка</h2>
+        </form>
+        <div class="Input" id="Input"></div>
+    </div>
+</body>
+</html>
